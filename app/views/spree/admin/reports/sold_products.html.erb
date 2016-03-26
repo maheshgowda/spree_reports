@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag 'spree_reports/spree_reports', media: 'all' %>
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
-<%=  %>
+
 
 <div class="spree_reports report">
   
@@ -45,7 +45,7 @@
         <th>Quantity</th>
       </tr>
   
-      <% @report.data.each_with_index do |item, index| %>
+      <% form_for @report.data.each_with_index do |item, index| %>
         <tr>
           <td><%= index+1 %></td>
           <td><%= item[:variant_id] %></td>
