@@ -17,8 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 3.0.7'
-
+  s.add_dependency 'mysql2'
   s.add_runtime_dependency 'groupdate', '~> 2.5', '>= 2.5.2'
   s.add_runtime_dependency 'chartkick', '~> 1.4', '>= 1.4.2'
-  s.add_runtime_dependency 'mysql2'
 end
